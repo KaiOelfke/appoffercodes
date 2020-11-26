@@ -1,0 +1,62 @@
+<script>
+// Prevent forms from submitting.
+  function preventFormSubmit() {
+    var forms = document.querySelectorAll('form');
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener('submit', function(event) {
+        event.preventDefault();
+      });
+    }
+  }
+  window.addEventListener('load', preventFormSubmit);    
+
+  // When the user presses the submit button this code runs in on the client.
+  // The google.script.run executes the server side JavaScript code.
+  function handleFormSubmit(formObject) {
+    google.script.run.withSuccessHandler(onSuccess).withFailureHandler(onFailure).processForm(formObject);
+    document.getElementById("myForm").reset();
+  }
+  
+  // Modify the website with the success callback.
+  function onSuccess(data) {
+    var code = data['code'];
+    var link = data['url'];
+    var paragraph = document.getElementById('output-code');
+    paragraph.innerHTML = code;
+    var paragraph = document.getElementById('output-link');
+    paragraph.innerHTML = '<a id="copy-link" href="'+ link + '">' + link + '</a>';
+    var div = document.getElementById('output-error');
+    div.innerHTML = '';
+  }
+  
+  // Modify the website with the failure callback.
+  function onFailure(error) {
+    var div = document.getElementById('output-error');
+    div.innerHTML = error;
+    var paragraph = document.getElementById('output-code');
+    paragraph.innerHTML = '';
+    var paragraph = document.getElementById('output-link');
+    paragraph.innerHTML = '';
+  }
+  
+  function copyToClipboard(fieldIdentifier) {
+    var text = undefined;
+    if (fieldIdentifier == 'code') {
+      // Copy code
+      text = document.getElementById('output-code').innerHTML;
+    } else {
+      // Copy URL
+      text = document.getElementById('copy-link').href;
+    }
+    if (text == undefined) {
+      return;
+    }
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummy);
+}
+
+</script>

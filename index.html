@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+
+  <!-- Do your own HTML and CSS here. It's embedded as IFRAME or users use the direct Google Sheets Macro url -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <?!= include('JavaScript'); ?>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <form id="myForm" onsubmit="handleFormSubmit(this)">
+          <p class="h4 mb-4 text-center">Get App Store Code (Demo)</p>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="user_code">Your code</label>
+              <input type="text" class="form-control" id="user_code" name="user_code" placeholder="Code">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email (use a demo email as it will be in the public demo sheet)</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+        <div class="mb-2 mt-2">
+          <span>App Store Code: 
+            <p  id="output-code"></p>
+            <button class="btn btn-secondary" onclick="copyToClipboard('code')">Copy</button>
+          </span>
+        </div>
+        <div class="mb-2">
+          <span>URL: 
+            <p  id="output-link"></p>
+            <button class="btn btn-secondary" onclick="copyToClipboard('link')">Copy</button>
+            <p>
+              <br>Open the URL on your iPhone to redeem it or enter the code in the App Store.
+            </p>
+          </span>
+        </div>
+        <div id="output-error"></div>
+      </div>
+    </div>
+
+    <p>
+      See data in the <a href="https://docs.google.com/spreadsheets/d/1Jxmg2pWiJsFXdGMBe24O3mt6o8MYG9aiW28SVZQnemA/">demo sheet</a>.
+    </p>
+    <p>
+      Get your own <a href="https://gum.co/unique-codes-with-sheets">Offer Code distribution tool</a>.
+    </p>
+  </div>
+</body>
+</html>
