@@ -44,6 +44,7 @@ Installation:
 15. Save the URL somewhere `https://script.google.com/macros/s/<macroid>/exec`. You can replace `/exec` with `/dev` for developing.
 16. Set execute the app as to me (Google Account).
 17. Set who has access to anyone, even anonymous.
+18. Click Deploy. The first time you've to authorize the script. You'll get a warning: "This app isn't verified: This app hasn't been verified by Google yet. Only proceed if you know and trust the developer.". Click advanced and then click "Go to UniqueCodes Gumroad (unsafe)".
 18. You can open the URL and test filling in the form. You should get a code and the sheet should be updated.
 19. Optionally, embed an IFRAME on your landing page like this:
 
