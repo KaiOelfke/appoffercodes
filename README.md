@@ -11,7 +11,7 @@ App Offer Codes solves this problem by providing a simple web app with a form. Y
 
 It's hosted as Google Script Macro and has no running costs. You only need a free Gmail or paid G Suite account.
 
-I made this for myself to distribute App Store codes for my app Amicu. Here's the [story](https://kaioelfke.de/offercodes/).
+I made this for myself to distribute App Store codes for my app Amicu. Here's the [story](https://kaioelfke.de/offercodes/). Check out the [live demo](https://script.google.com/macros/s/AKfycbzg9HfBLk6DXdlgjvxPfU-b4buRUEnMbdle2Q_H7_I/exec).
 
 The main limitation is the [quota for Google Script apps](https://developers.google.com/apps-script/guides/services/quotas). It should be fine for indie and side projects. Big companies probably want to use something else.
 
