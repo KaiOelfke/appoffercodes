@@ -11,7 +11,7 @@ App Offer Codes solves this problem by providing a simple web app with a form. Y
 
 It's hosted as Google Script Macro and has no running costs. You only need a free Gmail or paid G Suite account.
 
-I made this for myself to distribute App Store codes for my app Amicu. Here's the [story](https://kaioelfke.de/offercodes/). Check out the [live demo](https://script.google.com/macros/s/AKfycbzg9HfBLk6DXdlgjvxPfU-b4buRUEnMbdle2Q_H7_I/exec).
+I made this for myself to distribute App Store codes for my app Amicu. Here's the [story](https://kaioelfke.de/offercodes/). Check out the [live demo](https://script.google.com/macros/s/AKfycbxN2Mj58Ibi68d5g5RZm3KCjUItNFTmUoWskCH0xBozWf4uEbw/exec).
 
 The main limitation is the [quota for Google Script apps](https://developers.google.com/apps-script/guides/services/quotas). It should be fine for indie and side projects. Big companies probably want to use something else.
 
@@ -27,7 +27,7 @@ Requirements:
 
 Installation:
 
-1. Make a copy of this [Google Sheet](https://docs.google.com/spreadsheets/d/1Jxmg2pWiJsFXdGMBe24O3mt6o8MYG9aiW28SVZQnemA/). You can add further columns on the right. If you change the columns on the left you must change the column indices in the code.
+1. Make a copy of this [Google Sheet](https://docs.google.com/spreadsheets/d/17Sd7rKly7xCf1KncPOLZS5WBkUp6CxfCe7JcPAcpXGo/). You can add further columns on the right. If you change the columns on the left you must change the column indices in the code.
 2. In the Google Sheet Menu Bar open Tools -> Script Editor.
 3. You might have to authorize access to your Google account.
 4. Name your new script project.

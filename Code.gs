@@ -5,7 +5,7 @@ const sheetForUserCodeMap = {'CODE_SHARED_WITH_USERS': 'NAME_OF_OFFER_CODE_CAMPA
 const appStoreAppID = 'appid';
 
 // The ID of the spreadsheet is in the url e.g. https://docs.google.com/spreadsheets/d/<id>/
-const spreadsheetID = '1Jxmg2pWiJsFXdGMBe24O3mt6o8MYG9aiW28SVZQnemA';
+const spreadsheetID = '17Sd7rKly7xCf1KncPOLZS5WBkUp6CxfCe7JcPAcpXGo';
 
 /* 
  //You can use the UI and the Logger for debugging.
