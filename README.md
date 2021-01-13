@@ -1,7 +1,7 @@
 # App Offer Codes
 Distribute unique codes (e.g. App Store offer codes) with Google Sheets
 
-Reaad my related [blogpost](https://www.kaioelfke.de/offercodes/)
+Read my related [blogpost](https://www.kaioelfke.de/offercodes/)
 
 ## What is it?
 There are ecommerce platforms (e.g. the App Store) that only allow unique codes for discounts and promotions. But in many cases you want to or can only send a generic code to users like `SPECIALSALE`.
